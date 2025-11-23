@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ftching API
+        // earlier XHR object was 
+
+        // fetch('https://api.github.com/users')
+        // //console.log(response);
+        // .then(response => {
+        //     return response.json(); // returns new promises
+        // })
+        // .then(data => console.log(data))
+
+        // fetch('https://api.github.com/users')
+        // .then(response => response.json()) // returns new promises
+        // .then(data => console.log(data[2].type));
+
+        fetch('https://dummyjson.com/products')
+           .then(resp => resp.json())
+           .then(data => console.log(data.products[0].id))
+    </script>
+</body>
+</html>

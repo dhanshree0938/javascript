@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Variable decleration:</h1> <br>
+    <ul>
+        <li>Global</li>
+        <li>Local</li>
+    </ul>
+    <h1>Global</h1>
+    <h3>Global we can use any were in block and out of the block also
+        Ex. Var
+    </h3>
+    <h1>Local</h1>
+    <h3>Local variabale is use in only block paranthisis
+        Ex. Let Const
+    </h3>
+
+    <script>
+
+        var num = 10;
+        if (num >= 0) {
+            var result = "postive";
+            let answer = "its positive";
+            alert(result);
+            const PI = 3.14;
+            PI = 3.57;
+            // const inst; (can't declare like that beacuse of in const we have to declare name or value at the inital state cant declare later or upadate value)
+            // inst="Dhanshree"
+            const inst = "Dhanshree";  //declere const like that
+
+        }
+        //hoisting
+        alert(username);
+        var username = "Dhanshree";
+
+        //using hoisting javascript converts decleaer variable at top
+        var username = "Dhanshree"; //var support hoistitng
+        alert(username);
+
+        console.log(username);
+        console.log(squre);
+        let username = "Dhanshree" //cant acces username beacus let cant support hoisting
+
+        let squre = 100;
+        console.log(username);
+        console.log(circe);
+        var username = "Dhanshree";
+        var circle = 50;
+
+        console.log(username);
+        console.log(circe);
+        let username = "Dhanshree";
+        let circle = 50;
+
+    </script>
+</body>
+</html>

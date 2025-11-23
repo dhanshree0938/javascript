@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Variables can hold functions (anonymous function)
+    const fn = function(num){
+            return num**3;
+    }
+    console.log(typeof(fn));
+    const power = fn(4);
+    console.log(power);
+    
+    //Arrow function / lambda
+    //function(num){
+    //       return num**3;
+    //}
+    //syntax
+    //const v = (parameter) => return_value;
+    const cube = (num) => num**3;
+    console.log(typeof(cube));
+    const result = cube(5);
+    console.log(result);
+
+
+    // addition of two number
+
+    function add(n1, n2){
+            return n1+n2;
+    }
+    const addition = (n1,n2) => n1+n2;
+    const ans = addition(30,50)
+    console.log(ans);
+    
+    </script>
+    
+</body>
+</html>

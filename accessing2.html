@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is my heading</h1>
+    <h1 id="header">Lorem ipsum dolor sit amet.</h1>
+    <h1 class="cls">Lorem ipsum dolor sit amet.</h1>
+    <script>
+        const el = document.querySelector("h1"); //name
+        const el2 = document.querySelector("#header"); //id
+        const el3 = document.querySelector(".cls"); //classname
+        
+        console.log(el);
+        console.log(el2);
+        console.log(el3);
+
+        const arr1 = document.querySelectorAll("h1");
+        const arr2 = document.querySelectorAll("#header");
+        const arr3 = document.querySelectorAll(".cls");
+
+        console.log(arr1);        
+        console.log(arr2);        
+        console.log(arr3);        
+
+        
+    </script>
+</body>
+</html>

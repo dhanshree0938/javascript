@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let employee={
+
+name:"Dhanshree",
+id:123,
+salary:80000,
+date:"2 june 2025"
+
+
+};
+
+console.log("Employee Name:"+employee.name);
+console.log("Employee ID:"+employee.id);
+console.log("Employee salary:"+employee.salary);
+console.log("Employee Joining Date:"+employee.date);
+
+//dynamic way
+
+console.log("Employee Name:"+employee['name']);
+console.log("Employee ID:"+employee['id']);
+console.log("Employee salary:"+employee['salary']);
+console.log("Employee join date:"+employee['date']);
+
+
+let property=prompt("Enter the Property : name/id/salary/date");
+//alert("Entered property:"+property);
+
+alert(employee[property]);
+
+    </script>
+</body>
+</html>

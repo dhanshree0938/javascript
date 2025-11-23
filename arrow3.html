@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const data = [10,15,20,47,10,65,21,64]
+        function even(num){
+            return num%2==0;
+        }
+        const p = data.filter(num => num%2==0);
+        console.log(p);
+    
+        const p1 = data.filter(even);
+        console.log(p1);
+        
+    </script>
+</body>
+</html>

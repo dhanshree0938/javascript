@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function checkEven(num) {
+            return new Promise((resolve, reject) => {
+                console.log("Checking Number is Even.");
+                if(num%2==0){
+                    resolve(num + " is Even");
+                } else {
+                    reject(num + " is not even");
+                }
+            });
+        }
+        // checkEven(16)
+        //     .then(msg => {
+        //         console.log(msg);
+        //         return checkEven(16);
+        //     })
+        //     .then(msg => {
+        //         console.log(msg);
+        //         return checkEven(24);
+        //     })
+        //     .then(msg =>{
+        //         console.log(msg);
+        //         return checkEven(20);
+        //     })
+        //     .catch(err => console.error(err));
+        
+
+        //synchronous execution of promises
+        //if promise chaining code (then) is too lengthy/ complex we can use async- await
+        async function synchronousDemo(){
+            try{
+                const resp1 = await checkEven(10);
+                console.log(resp1);
+                const resp2 = await checkEven(16);
+                console.log(resp2);
+                const resp3 = await checkEven(57);
+                console.log(resp3);
+                const resp4 = await checkEven(11);
+                console.log(resp4);
+            }
+            catch(err){
+                console.error(err);
+            }
+        }
+        synchronousDemo();
+    </script>
+</body>
+</html>

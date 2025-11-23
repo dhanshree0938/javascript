@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Searching the Elements</h1>
+    <h1 class="cls">5 Ways to acess the HTML elements through JS</h1>
+    <p class="cls">get methods - 3</p>
+    <p class="cls">querySelector - 2</p>
+    <input type="text" id="username">
+    <button onclick="check()">Click Here</button>
+
+    <script>
+        /*
+        DOM -->  Document Object Model Manipulation 
+
+        1. accessing the elements
+
+        2. capture the Content
+        3. Js, set up the Content
+
+        4. addding new elements
+        5. remove the elements
+
+        6. CSS manipulation
+
+        */
+
+        // accessing the elements
+        // const element = document.getElementById("header");
+        // console.log(element);
+
+        // //capturing the content of HTML elemnts
+        // const heading = element.innerHTML;
+        // console.log(heading);
+
+        // const heading2 = document.getElementById("header").innerHTML;
+        // console.log(heading2);
+        
+        
+        // collection mehods - returns the collection of elements
+
+        // const allParagraph= document.getElementsByTagName("p");
+        // for(let i=0; i<allParagraph.length; i++){
+        //     const element = allParagraph[i];
+        //     console.log(element);
+        //     const content = allParagraph[i].innerHTML;
+        //     console.log(content);
+        // }
+
+        // const elementByClass = document.getElementsByClassName("cls");
+        // //for-of
+        // for(let clsElement of elementByClass){
+        //     console.log(clsElement);
+            
+        // }
+
+        function check(){
+            const username = document.getElementById("username").value;
+            console.log(username);
+            
+        }
+
+    </script>
+</body>
+</html>

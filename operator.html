@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Unary Operator</li>
+        <li>Binary Operator</li>
+        <li>Teritary/ternary/Misc Operator</li>
+    </ul>
+    <script> 
+
+        // Binary operator, operate on two operands
+        // let answer = 10 * 20; // two operands
+        // let div= n1 / n2;
+        // let result= n1 < n2;
+
+        // unary operators: operate on single operand
+        // increment++, decrement--
+        let num=10;
+        num++; // num= num+1 (post increment)
+        console.log(num);
+        num--; // num= num-1 (post decrement)
+        console.log(num);
+
+        ++num;  // pre increment
+        console.log(num);
+        --num;  // pre decrement
+        console.log(num); 
+        
+        //Teritary/ternary/Misc Operator - it mostly used for if-else
+        let n1= parseInt(prompt("Enter a num"));
+        let n2= parseInt(prompt("Enter a num"));
+
+        // result_var = (conditon) ? true_answer : false_answer;
+        let largest = (n1 > n2) ? n1 : n2;
+
+        alert("Largest no is " + largest);
+        console.log("Largest no is " + largest);
+        
+    </script>
+</body>
+</html>

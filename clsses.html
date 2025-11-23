@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Classes and object OOP</h2>
+    <script>
+        // class defines the structure of object
+        // every object created by using student class, will have exacly same structure.
+        // class is referred as blueprint of object
+        class student {
+            // instance variables
+            id;
+            name;
+            dob;
+            school;
+        
+        constructor(){
+            // special function, called everytime when we create new object
+            console.log("Student constructor is called");
+        }
+
+        //method
+        study(){
+            //console.log("student is studying");
+            console.log(this.name + " is studying");
+            console.log(this.id + " is my id");
+        }
+    }
+        //object creation
+        const s= new student();
+        s.name = "Dhanu";
+        s.study();
+        const s2 = new student();
+        s2.id = 101;
+        s2.study();
+
+    </script>
+</body>
+</html>

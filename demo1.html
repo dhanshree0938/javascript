@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Understanding Js Objects</h2>
+    <h2>JSON: JS object notation</h2>
+    <script>
+        //object is defined using key-value pairs
+        let student = {
+            id:101,
+            name:"Dhanshree",
+            dob:"08 05 2004"
+        };
+        
+        //accessing specific key-value pair
+        //1. using . operator
+        // name of student
+        //console.log("Name: " +student.name);
+        // birth date
+        //console.log("Birh Date: " +student.dob);
+
+        //2. dynamic property syntax
+        //console.log("Id: " +["id"]);
+
+
+        
+        //deleting the key-value pair
+        //delete student.id;
+        //console.log(student);
+
+        //rest operator
+        //.. used on the left side of assignment ---> rest operator
+
+        //destructing the object
+        // capturing the values of keys in independent variables
+        // const dob = student.dob
+        // const  name= student.name
+
+        //const{id, name, dob}= student;
+        //console.log(name);
+        //console.log(dob);
+
+        // NOTE: the variable name must be same as that of the key name within the object
+        //const{sid}= student;
+        //console.log(sid);
+
+        //const {id, name} = student; // destructing
+        // const {id, ...person} = student;
+        // console.log(person);
+
+        //spread : if ... used on the right side of the assignment, it is called as spread operator.
+        //it is used to create the indenpendent copy of the object
+        
+        const stu1 = student; //here, stu1 is the new reference for the same student object
+        console.log("stu1: " , stu1);
+        
+        //there is one object with two reference ---> 'student', 'stu1'. As a result of this change in one will affect the other.
+        student.dob="09 nov 2003"; // changing student object, it will affect on stu1
+        console.log("stu1 dob: " +stu1.dob);
+        console.log(student);
+
+        //In order to create the separate copy of existing object, we can use spread operator
+
+        const stu2 = {...student}; //here stu2 is a separate object. change in student willnot affect stu2. change in stu2 willnot affect student.
+
+        stu2.id=121;
+        console.log("stu2 id: " +stu2.id);
+        console.log("student id: " +student.id);
+        
+        
+    </script>
+</body>
+</html>

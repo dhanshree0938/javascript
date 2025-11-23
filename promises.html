@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const egg = new Promise((resolve, reject)=> {
+        //     // starts execution of this excecutor function immediatly
+        //     // as soon as the promise is defined
+        //     console.log("executor function started execution");
+        //     // resolve("Great!!! Its a  chick !");
+        //     reject("Sorry!!, It is a broken egg");
+        // });
+
+        // // promise states/stages - pending, resolved, rejected
+
+        // // we need to consume the Promise, so that we know
+        // // if its resolved or rejected
+
+        // // consuming the Promise
+        // // .then() handles the resolve, sucessfull excuted
+        // //.catch() handles he reject failing
+        // finally() This function gets executed irrespective of promise execution. if promise is resolved/ rejected, in both cases finally() will be executed 
+
+        // egg
+        //     .then(msg => console.log(msg))
+        //     .catch(err => console.error(err));
+
+
+        function checkEven(num) {
+            return new Promise((resolve, reject) => {
+                console.log("Checking Number is Even.");
+                if(num%2==0){
+                    resolve(num + " is Even");
+                } else {
+                    reject(num + " is not even");
+                }
+            });
+        }
+        checkEven(3)
+           .then(msg => console.log(msg))
+           .catch(err => console.error(err))
+           .finally(()=>console.log("within finally"));
+    </script>
+</body>
+</html>

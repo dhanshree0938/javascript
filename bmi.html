@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BMI - Body Mass Index</h1>
+    <script>
+        var weight=parseFloat(prompt("Enter a Weight"));
+        var height=parseFloat(prompt("Enter a Height"));
+        var BMI = weight/height**2;
+        if(BMI<18.5)
+    {
+        alert(BMI + " is Underweight");
+        
+    }
+        else if(18.5 <= BMI <= 24.9)
+    {
+        alert(BMI + " is Normalweight");
+        
+    }
+       else if(25.05 <= BMI <= 30.00)
+    {
+        alert(BMI + " is Overweight");
+        
+    }
+       else
+    {
+        alert(BMI + " is  Obesity");
+    }
+    </script> 
+</body>
+</html>

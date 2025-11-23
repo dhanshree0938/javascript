@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Applications of arrow funcions</h2>
+    <p>Generally arrow functions are passed as parameter to other functions
+        eg : functionB(functionA)
+    </p>
+    <script>
+        // function demo(){
+        //     console.log("This demo Function"); 
+        // }
+        // function test(fn){ // Accepting function as parameter
+        //     console.log("Test function");
+        //     fn();
+        // }
+        // test(demo); // passing demo function to test
+        
+        // function print(){
+        //     console.log("done");
+        // }
+        // const p = () => console.log("Done");
+        // //setTimeout(fn, delay_ms)
+        // // calculate delay and after completion fn will be excuted
+        // // setTimeout(print, 2000);
+        // // setTimeout(p, 2000);
+        
+        // setTimeout(() => console.log("Done"), 5000);
+
+        // //filter, map, reduce
+
+        // const data = [10,15,20,47,10,65,21]
+        // //expected output, number above 20 --> [47,65,21]
+        // //const data = [10,2,3,8,14]; if it is not greater than 20 it will print empty array
+
+        // //Js defined filter(fn_returningBoolean)
+        // function check(num){
+        //     if(num>20) return true;
+        //     else return false;
+        //     // return num>0 //using ternary operator instead of writing if-else in above function
+        // }
+        // //const chk = num => num>20;
+        // //const above20 = data.filter(chk);
+        // //const above20 = data.filter(check);
+        // const above20 = data.filter(num => num>20);
+        // //check(10) --> false
+        // //check(15) --> false
+        // //check(20) --> false
+        // //check(47) --> true
+        // //check(10) --> false
+        // //check(65) --> true
+        // //check(21) --> true
+        // console.log(above20);
+        
+
+        ///map
+        // const data = [2,6,4,3]
+        // function double(num){
+        //     return num*2;
+        // }
+        // const mul = data.map(num => num*2);
+        // console.log(mul);
+
+        //reduce
+
+        // const data = [10,20,30,40,50]
+        // function addAll(num, total){
+        //     return num+total;
+        // }
+        // const v = data.reduce((num, total) => (num+total));
+        // console.log(v);
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Types of functions</h2>
+    <h3>void functions: they do not return anything</h3>
+    <h3>Non void function: they will return some values</h3>
+    <script>
+        //void function, non-parameterized
+        function hello(){
+            alert("Hello..");
+        }
+
+        // void function, parameterized
+        function addition(n1, n2){ 
+            const result = n1+n2;
+            console.log("Addition of two number: " +result);
+        }
+        addition(20,30);
+        addition(2); //NaN
+        addition(20,); //NaN
+        addition(20,30,50); //50
+        addition(20,"hii"); //20hii
+        addition("hello","hii"); //hellohii
+        addition(20,"30"); //2030
+
+        // void function, non-parameterized
+        function getpi(){
+            return 22/7;
+        }
+        const pi = 3.14;
+        console.log(pi);
+
+        //non-void function, parameterized
+        function sub(n1, n2){
+            return n1 - n2;
+        }
+        const subtract = sub(70, 30);
+        console.log("subtraction of two number: " + subtract);
+        
+    </script>
+
+</body>
+</html>

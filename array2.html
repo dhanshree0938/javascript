@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array destruting, rest and spread</h2>
+</body>
+<script>
+    const values = [20, 85, 36, 76, 91];
+
+    //destructuring 
+    const [, b, , d, e] = values;
+    console.log(b);
+    console.log(e);
+
+    // rest operator
+    //const values = [20, 85, 36, 76, 91];
+    const [p, q, r, ...remain] = values;
+    console.log(remain); //[76, 91]
+
+    const [s, t, u, v, ...other] = values;
+    console.log(other); //[91]
+
+    const [k, w, x, y, z, ...rest] = values;
+    console.log(rest); //[] empty array it is undefined
+    
+    //spread operator
+    const data = [...values];
+    console.log(data);
+
+    // merging array using spread
+    const arr1 = [10,20,30];
+    const arr2 = [40,50,60];
+    console.log(arr2);
+
+    const arr3 = [...arr1, ...arr2];
+    console.log(arr3);
+
+    const arr4 = [30, ...arr2, 50];
+    console.log(arr4);
+    
+    
+    
+</script>
+</html>

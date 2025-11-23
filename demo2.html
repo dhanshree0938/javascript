@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Nested Object</h2>
+</body>
+<script>
+    const student = {
+        id: 110,
+        name: "Yash",
+        branch: "IT",
+        marks: {
+            python: 56,
+            sql: 65,
+            AT: 84 
+        }
+    };
+    console.log(student);
+    console.log(student.marks);
+    console.log(student.marks.AT);
+
+    //destructuring
+    //const {name, branch} = student;
+    const {name , marks:{sql}} = student;
+    console.log(`${name} is scored ${sql} in Structure Query Language`);
+    
+</script>
+</html>
