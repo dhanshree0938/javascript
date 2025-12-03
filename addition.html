@@ -6,46 +6,46 @@
     <title>Document</title>
 </head>
 <body>
-    num1: <input type="text" id="num1"><br>
-    num2: <input type="text" id="num2"><br>
-    total: <input type="text" id="total"><br>
-    <button onclick="input()">Addition</button>
-    <h2 id="result"></h2>
-    <div></div>
-    <div id="parentdiv"></div>
+    <h1>Addition of two Number</h1>
     <script>
-        function input(){
-            const num1 = Number(document.getElementById("num1").value);
-            const num2 = +document.getElementById("num2").value; //+, number, parseint, parsefloat it display the meassage in number form by convert the string
-            const Add = num1+num2;
-            // alert(Add);
+        var dateOfBirth // camelcase
+        var date_of_birth //snake_case
+        var n1=10;
+        var n2=10;
+        var ans= n1+n2;
+        console.log(n1+n2);
 
-            //const header = document.querySelector("h2");
-            //header.innerHTML = "Addition of two number: "+add;
+        var num1=10;
+        var num2=20;
+        var answer=30;
+        console.log(answer);
+        console.log("Addition result is " +answer);
+        console.log(n1+ "+" +n2+ "=" +ans);
 
-            document.querySelector("h2").innerText = "Addition of two number: "+Add;
-            document.querySelector("div").innerHTML = `<h2>Addition is ${Add}</h2>`;
-            document.querySelector("#total").value = Add;
+        //template String
+        var result= `Addition: ${num1} + ${num2} = ${answer}`;
+        console.log(result);
+        
 
-            //CSS Manipulation
-            const h2 = document.getElementById("result");
-            h2.style.color = "red";
-            h2.style.backgroundColor = "pink";
-            h2.style.fontSize = "30px";
-            h2.style.border = "2px solid blue";
-            h2.style.fontFamily = "Courier";
+/* 
 
-            //adding a new HTML element
-            //adding the body
-            const newel = document.createElement("h1");
-            newel.innerText = "Header Created By JS";
-            newel.style.color = "Green";
-            //document.body.append(newel);
-            //adding at the end of body
-            //adding with respect to exiting div
-            const parentDiv = document.getElementById("parentdiv");
-            parentDiv.before(newel); // before - before div it it will print, append- it will print in between the div , after - after div it it will print
-        }
+space are not allowed.
+keywords are not allowed 
+
+allow:-
+alphabet
+digit 
+underscore
+digit will not take first place but we can start with variable
+
+good practice
+name should be meaningful 
+
+single comment //
+mutliple comment
+
+*/
+        
     </script>
 </body>
 </html>
